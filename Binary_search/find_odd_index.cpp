@@ -47,11 +47,13 @@ int singleNonDuplicate(int arr[],int size) {
             else if(currVal != leftVal && currVal == rightVal) {
                 int pairStartingIndex = mid;
                  if(pairStartingIndex & 1) {
-                    
+                    //agar index odd hua 
+                    //standing on right part
+                    //move to left
                     e = mid-1;
                 }
                 else {
-                    
+                    //move to right
                     s = mid+1;
                 }
             }
