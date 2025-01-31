@@ -63,7 +63,7 @@ vector<int> insertion(vector<int> v, int n)
 int main()
 {
     ofstream outfile;
-    outfile.open("insertion.txt", ios_base::app);
+    outfile.open("selection.txt", ios_base::app);
     if (!outfile)
     {
         cerr << "Error opening file" << endl;
@@ -85,7 +85,7 @@ int main()
 
     auto start = chrono::high_resolution_clock::now();
 
-    v = insertion(v, n);
+    v = selection(v, n);
 
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double> duration = (end - start) * pow(10, 6);
