@@ -10,9 +10,9 @@ void printSubSequence(string str, string output, int index)
     printSubSequence(str, output + str[index], index + 1);
     printSubSequence(str, output, index + 1); 
 }
-int main()
+int main() 
 {
-    string str = "abc";
+    string str = "vp";
     string output = "";
     int index = 0;
     printSubSequence(str, output, index);
