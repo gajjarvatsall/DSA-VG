@@ -12,7 +12,7 @@ void printSubSequence(string str, string output, int index)
 }
 int main() 
 {
-    string str = "vp";
+    string str = "abc";
     string output = "";
     int index = 0;
     printSubSequence(str, output, index);
