@@ -38,7 +38,7 @@ public:
                 slow = slow->next;
                 if (fast == slow)
                 {
-                    return slow;
+                    return fast;
                 }
             }
         }
