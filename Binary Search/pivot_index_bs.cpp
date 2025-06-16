@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 int pivotIndex(vector<int> a){
     int s = 0;
     int e = a.size()-1;
