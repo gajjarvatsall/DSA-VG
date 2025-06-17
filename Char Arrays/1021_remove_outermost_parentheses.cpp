@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+class Solution
+{
+public:
+    string removeOuterParentheses(string s)
+    {
+        string ans = "";
+        int depth = 0;
+
+        for (char ch : s)
+        {
+            if (ch == '(')
+            {
+                if (depth > 0)
+                    ans += ch; // Skip outermost '('
+                depth++;
+            }
+            else
+            {
+                depth--;
+                if (depth > 0)
+                    ans += ch; // Skip outermost ')'
+            }
+        }
+        return ans;
+    }
+};
+int main()
+{
+
+    return 0;
+}
