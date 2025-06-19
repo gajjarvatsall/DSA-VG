@@ -24,6 +24,7 @@ Node *reverseItr(Node *head)
     return temp;
 }
 
+
 // Recursive function to reverse a doubly linked list
 Node *reverseRec(Node *curr) { 
   
